@@ -8,10 +8,10 @@ end ripple_frequency_synthesizer_tb;
 architecture arch of ripple_frequency_synthesizer_tb is
 
     component ripple_frequency_synthesizer is
-        port(clock : in std_logic;
-             reset : in std_logic;
-             frequency_control : in std_logic_vector(4 downto 0);
-             frequency : out std_logic);
+        port (clock : in std_logic;
+              reset : in std_logic;
+              frequency_control : in std_logic_vector(4 downto 0);
+              frequency : out std_logic);
     end component;
 
     constant clock_period : time := 15.625 ns; -- 64 MHz
