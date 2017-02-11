@@ -1,3 +1,6 @@
+-- Implements an N-bit ripple carry adder that adds the input vectors A and B
+-- with carry-in Cin into a sum output vector Sum and a carry-out Cout.
+
 library ieee;
 use ieee.std_logic_1164.all;
 

@@ -1,3 +1,6 @@
+-- Implements a basic full adder cell that adds two bits A and B with carry-in Cin
+-- into an output sum S and carry-out Cout.
+
 library ieee;
 use ieee.std_logic_1164.all;
 
