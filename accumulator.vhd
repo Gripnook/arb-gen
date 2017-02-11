@@ -1,3 +1,6 @@
+-- Implements an accumulator cell that adds an input A with carry-in Cin
+-- to an internal sum and produces a carry-out signal Cout on every rising clock edge.
+
 library ieee;
 use ieee.std_logic_1164.all;
 

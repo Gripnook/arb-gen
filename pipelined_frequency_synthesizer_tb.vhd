@@ -8,10 +8,11 @@ end pipelined_frequency_synthesizer_tb;
 architecture arch of pipelined_frequency_synthesizer_tb is
 
     component pipelined_frequency_synthesizer is
+        generic (N : integer := 5);
         port (clock : in std_logic;
               reset : in std_logic;
               update : in std_logic;
-              frequency_control : in std_logic_vector(4 downto 0);
+              frequency_control : in std_logic_vector(N-1 downto 0);
               frequency : out std_logic);
     end component;
 
@@ -77,7 +78,7 @@ begin
         update <= '0';
         wait for 128 * clock_period;
 
-        frequency_control <= std_logic_vector(to_unsigned(31, 5));
+        frequency_control <= std_logic_vector(to_unsigned(29, 5));
         update <= '1';
         wait for 5 * clock_period;
         update <= '0';

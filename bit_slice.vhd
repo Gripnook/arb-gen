@@ -1,3 +1,9 @@
+-- Implements a single bit of a pipelined accumulator which repeatedly
+-- adds a signal frequency_control with carry-in Cin on every rising clock edge
+-- and produces a carry-out signal Cout. The frequency_control signal is stored
+-- internally and can only be changed by the input when update_in is asserted.
+-- The update_out signal allows propagation of the update signal in sync with the pipeline.
+
 library ieee;
 use ieee.std_logic_1164.all;
 
