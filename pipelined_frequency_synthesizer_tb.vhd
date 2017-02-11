@@ -78,7 +78,7 @@ begin
         update <= '0';
         wait for 128 * clock_period;
 
-        frequency_control <= std_logic_vector(to_unsigned(29, 5));
+        frequency_control <= std_logic_vector(to_unsigned(31, 5));
         update <= '1';
         wait for 5 * clock_period;
         update <= '0';
