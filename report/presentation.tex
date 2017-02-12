@@ -55,7 +55,17 @@
     \item Other frequencies experience jitter
 \end{itemize}
 
-\[ f_{out} = frequency\_control * \frac{f_{clk}}{N} \]
+\begin{table}
+    \centering
+    \caption{Input of 0x0A}
+    \begin{tabular}[c]{c | c | c | c | c | c}
+        0  & 8  & 6  & 4  & 2  & 0  \\
+        10 & 18 & 16 & 14 & 12 & 10 \\
+        20 & 28 & 26 & 24 & 22 & 20 \\
+        30 & 38 & 36 & 34 & 32 & 30 \\
+        40 &    &    &    &    & 40 \\
+    \end{tabular}
+\end{table}
 
 \begin{figure}[!htb]
     \centering
